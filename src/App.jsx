@@ -8,7 +8,7 @@ function App() {
       <div className="mini-container">
         <div className="flex center column">
           <div className="flex center">
-            <a href="https://react.dev" target="_blank">
+            <a href="https://brifolio.vercel.app/" target="_blank">
               <div className="logo react hex" alt="React logo"></div>
             </a>
           </div>
