@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:700|Inter:400");
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: hsl(0, 0%, 9%);
+    --background: radial-gradient(#dccec7, #fff);
+    /* --background: linear-gradient(#dccec7, #f58447); */
+    --primary: hsl(199, 69%, 54%);
+    --secondary: #f58447;
+    --accent: #faead6;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e8e8e8;
+    --background: radial-gradient(#382a23, #000);
+    --primary: #13465e;
+    --secondary: #7e3107;
+    --accent: #291905;
+  }
+}
+
+body {
+  font-family: "Inter";
+  font-weight: 400;
+  background: var(--background);
+}
+
+p {
+  color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter";
+
+  color: var(--text);
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+  font-weight: 500;
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}

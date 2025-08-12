@@ -1,0 +1,165 @@
+ol,
+li {
+  list-style-type: none;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.grid1 ul {
+  margin: -1rem 0;
+}
+
+.grid3 h3 {
+  margin: -0.1rem -0.3rem;
+}
+
+.grid3 p ul {
+  margin: 0 -1rem;
+}
+
+.grid4 p ul {
+  margin: 0 -1rem;
+}
+
+.grid .grid1,
+.grid2,
+.grid3,
+.grid4 {
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.grid1 {
+  background: var(--primary);
+}
+.grid2 {
+  background: var(--secondary);
+}
+.grid3 {
+  background: var(--text);
+  color: var(--accent);
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--accent);
+  }
+}
+.grid4 {
+  background: var(--accent);
+}
+
+@media (min-width: 900px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60% 40%;
+    height: 90vh;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .grid1,
+  .grid2,
+  .grid3,
+  .grid4 {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 115px;
+            height: 100px;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+  }
+
+  .grid1 {
+    grid-area: 1 / 1 / 2 /2;
+    background: var(--primary);
+  }
+  .grid2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background: var(--secondary);
+  }
+  .grid3 {
+    grid-area: 2 / 1 / 3 / 2;
+    background: var(--text);
+    color: var(--accent);
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--accent);
+    }
+  }
+  .grid4 {
+    grid-area: 2 / 2 / 3 / 3;
+    background: var(--accent);
+  }
+}
+@media (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 60% 40%;
+    height: 90vh;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .grid1,
+  .grid2,
+  .grid3,
+  .grid4 {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 115px;
+        height: 100px;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+  }
+
+  .grid1 {
+    grid-area: 1 / 1 / 2 /5;
+    background: var(--primary);
+  }
+  .grid2 {
+    grid-area: 1 / 5 / 2 / 6;
+    background: var(--secondary);
+  }
+  .grid3 {
+    grid-area: 2 / 1 / 3 / 4;
+    background: var(--text);
+    color: var(--accent);
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--accent);
+    }
+  }
+  .grid4 {
+    grid-area: 2 / 4 / 3 / 6;
+    background: var(--accent);
+  }
+}
