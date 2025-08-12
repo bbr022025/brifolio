@@ -36,8 +36,12 @@ export default function Cv() {
       </div>
       <div className={style.grid2}>
         <h2>Brian Blomlie</h2>
-        <p>📧 blomlie@proton.me</p>
-        <p>📱 +47 904 28 336</p>
+        <p>
+          📧 <a href="mailto:blomlie@proton.me">blomlie@proton.me</a>
+        </p>
+        <p>
+          📱 <a href="tel:+4790428336">+47 904 28 336</a>
+        </p>
         <p>🌍 Oslo, Norway</p>
         <p>
           <a href="https://linkedin.com/in/blomlie">LinkedIn</a>
